@@ -46,7 +46,7 @@
                 </div>
                 <p class="formText">{{ $page->text_block_content }}</p>
                 <div class="col-lg-5">
-                    <input name="submit" type="submit" value="Envoyer">
+                    <input name="submit" type="submit" value="Envoyer!">
                 </div>
             </form>
         </div>
