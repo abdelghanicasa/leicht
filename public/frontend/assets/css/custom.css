@@ -1,0 +1,65 @@
+/* Initially hide the logo and phone number */
+#topContent {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+/* When content becomes visible on scroll */
+#topContent.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Navbar links - adjust margin-top to push down the content */
+.navbar-nav {
+    margin-top: 65px;  /* 40 Adjust this if needed to push navbar further down */
+}
+
+/* Optional: Style the phone number */
+.phone-number {
+    font-size: 18px;
+    font-weight: bold;
+}
+      /* Position the div at the top right of the screen */
+      .stacked-div {
+      position: fixed;
+      top: 0px;
+      right: 243px;
+      padding:0; /* 10px 10px*/
+      color: white;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      font-size: 17px;
+      z-index: 9999; /* Ensure it's on top of other content */
+    }
+
+    /* Inner wrapper that will have clip-path applied */
+    .stacked-div-content {  
+        padding: 7px 26px;
+        background-color: #bcad59;
+        /* clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%); */
+        color: #000;
+    }
+
+    .badge {
+        position: absolute;
+    left: -2.66rem;
+    top: 50%;
+    transform: translateY(-50%) scale(0.8);
+    background: #272727;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 1.71rem;
+    z-index: 1;
+    transition: all 225ms 0ms ease-in-out;
+    }
+
+    .badge svg {
+      color: white;
+      stroke: #fff;
+    }

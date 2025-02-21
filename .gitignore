@@ -1,0 +1,30 @@
+# Ignore environment & config files
+.env.backup
+.env.production
+Homestead.json
+Homestead.yaml
+auth.json
+
+# Ignore dependencies & build files
+/node_modules/
+/vendor/
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+
+# PHPUnit & IDE files
+/.phpunit.cache
+.phpunit.result.cache
+/.fleet/
+/.idea/
+/.vscode/
+
+# Ignore logs
+npm-debug.log
+yarn-error.log
+*.log
+
+
+# Optional: Ignore all files inside "www" (adjust if needed)
+www/*
