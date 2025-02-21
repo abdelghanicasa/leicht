@@ -501,18 +501,6 @@ $('.slider-grid-bg .owl-carousel').owlCarousel({
     
         popup.style.display = "flex"; // Show the popup
         video.play(); // Start playing the video
-    
-        // Try to open video in fullscreen
-        if (video.requestFullscreen) {
-            video.requestFullscreen();
-            video.play(); // Start playing the video
-        } else if (video.mozRequestFullScreen) { // Firefox
-            video.mozRequestFullScreen();
-        } else if (video.webkitRequestFullscreen) { // Chrome, Safari and Opera
-            video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) { // IE/Edge
-            video.msRequestFullscreen();
-        }
     }
     
     function closeVideoPopup() {
@@ -523,6 +511,7 @@ $('.slider-grid-bg .owl-carousel').owlCarousel({
         video.currentTime = 0; // Reset video time
         popup.style.display = "none"; // Hide popup
     }
+        
 
     // 42.63524426012433, 9.437811153973703
     

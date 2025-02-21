@@ -47,32 +47,29 @@
                     {!! str_replace('<p>', '<p class="text-center">', $bloc->text) !!}
                 </div>
 
-                <!-- Video Popup Modal -->
-                <div id="videoPopup" class="video-popup">
-                    <div class="video-popup-content">
-                        <span class="close-button" onclick="closeVideoPopup()">×</span>
-                        <video id="popupVideo" controls width="100%">
-                        <source src="{{ asset('frontend/assets/img/leicht.mp4') }}" type="video/webm">
-                        <source src="{{ asset('frontend/assets/img/leicht.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
+
             </div>
 
+        </div>
+
+    </div>
+    <!-- Video Popup Modal -->
+    <div id="videoPopup" class="video-popup">
+        <div class="video-popup-content">
+            <span class="close-button" onclick="closeVideoPopup()">×</span>
+            <video id="popupVideo" controls width="100%">
+                <source src="{{ asset('frontend/assets/img/leicht.mp4') }}" type="video/webm">
+                <source src="{{ asset('frontend/assets/img/leicht.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
 </section>
 @endif
 
+
 @push('scripts')
 <script>
-    function openVideoPopup() {
-        document.getElementById("videoPopup").style.display = "block";
-    }
 
-    function closeVideoPopup() {
-        document.getElementById("videoPopup").style.display = "none";
-    }
 </script>
 @endpush

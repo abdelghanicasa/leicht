@@ -26,7 +26,7 @@
 
     @if($page->images && count($page->images) > 0)
         <!-- If images are present, show the gallery -->
-        <x-frontend.hp-gallery-grid :images="$images" :titles="$titles" />
+        <x-frontend.hp-gallery-grid :pages="$page" :images="$images" :titles="$titles" />
     @endif
 
     <x-frontend.blocdevis/> 

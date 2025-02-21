@@ -12,12 +12,15 @@ class HpGalleryGrid extends Component
      * Create a new component instance.
      */
     public $images;
+    public $pages;
     public $titles;
 
-    public function __construct($images, $titles = [])
+    public function __construct($images, $titles = [], $pages)
     {
+        $this->pages = $pages;
         $this->images = $images;
         $this->titles = $titles;
+
     }
 
     /**
