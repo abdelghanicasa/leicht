@@ -11,7 +11,7 @@
         <div class="position-relative o-hidden mb-4 animate-box" data-animate-effect="fadeInUp">
             <img src="{{ asset('storage/' . $images[0]->path) }}" alt="" class="w-100 hover-img first-image">
             <div class="overlay">
-                <a href="{{ $slug }}">
+                <a href="/nos-cuisines">
                     <p class="image-text text-white animated" data-animate-effect="fadeInUp">{{ $titles[0] ?? 'Nos Cuisines' }}</p>
                 </a>
             </div>
@@ -24,7 +24,9 @@
                 <div class="position-relative about-img d-flex position-relative fade-in animate-box" data-animate-effect="fadeInUp">
                     <img src="{{ asset('storage/' . $images[1]->path) }}" alt="ccs_logo" class="img-fluid w-100 hover-img second-image" style="object-fit: cover;">
                     <div class="overlay">
-                        <p class="image-text text-white animated" data-animate-effect="fadeInUp">{{ $titles[1] ?? 'Nos Dressings' }}</p>
+                    <a href="/nos-cuisines">
+                        <p class="image-text text-white animated" data-animate-effect="fadeInUp">{{ $titles[0] ?? 'Nos Cuisines' }}</p>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -36,7 +38,9 @@
                         class="img-fluid w-100 h-100 hover-img third-image"
                         style="object-fit: cover; min-height: 100%;">  <!-- Ensure full height -->
                     <div class="overlay">
-                        <p class="image-text text-white animated" data-animate-effect="fadeInUp">{{ $titles[2] ?? 'Nos Réalisations' }}</p>
+                    <a href="/nos-dressings">
+                        <p class="image-text text-white animated" data-animate-effect="fadeInUp">{{ $titles[0] ?? 'Nos Dressings' }}</p>
+                    </a>
                     </div>
                 </div>
             </div>

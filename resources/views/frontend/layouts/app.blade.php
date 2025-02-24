@@ -3,7 +3,9 @@
 <html lang="zxx">
 <head>
     @include('frontend.partials.head')
-    @vite(['frontend/assets/app.js']) 
+    <!-- @vite(['frontend/assets/app.js'])  -->
+                         
+
 </head>
 <body>
     @include('frontend.partials.navbar')
@@ -37,5 +39,7 @@
     <script src="{{ asset('frontend/assets/js/vegas.slider.min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/custom.js') }}"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- @vite(['resources/frontend/assets/js/app.js'])  -->
+                         
 </body>
 </html>

@@ -52,7 +52,7 @@
 
                         <div class="">
                             <div class="input-group input-group-outline my-3">
-                                <label class="form-label">Titre Bloc </label>
+                                <!-- <label class="form-label">Titre Bloc </label> -->
                                 <input type="text" name="text_block_title" class="form-control" value="{{ $page->text_block_title }}">
                             </div>
 

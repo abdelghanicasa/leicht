@@ -128,6 +128,7 @@
                 let orderInputGroup = createInputDiv('number', 'image_orders[]', index + 1, 'Ordre de l\'image');
                 let titleInputGroup = createInputDiv('text', 'image_titles[]', '', 'Titre de l\'image');
                 let categoryInputGroup = createCategoryDiv(categories);
+                
 
                 // Append all input groups to the inputContainer
                 let inputContainer = document.createElement('div');
@@ -135,6 +136,7 @@
                 inputContainer.appendChild(orderInputGroup);
                 inputContainer.appendChild(titleInputGroup);
                 inputContainer.appendChild(categoryInputGroup);
+
 
                 // Create close button
                 let closeBtn = document.createElement('button');
@@ -198,6 +200,7 @@ function createCategoryDiv(categories) {
     inputGroup.appendChild(categorySelect);
     return inputGroup;
 }
+
 </script>
 @endpush
 

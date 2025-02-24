@@ -41,7 +41,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Update Slider</button>
+                        <button type="submit" class="btn btn-primary">Modifier Slider</button>
                     </form>
                 </div>
             </div>
